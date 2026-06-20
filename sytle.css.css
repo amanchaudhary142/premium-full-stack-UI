@@ -1,0 +1,319 @@
+/**
+ * Advanced Corporate UI Identity Token Sheet
+ */
+:root {
+    /* Bright Premium Color Tokens */
+    --brand-primary: #4f46e5;       
+    --brand-gradient-end: #06b6d4;  
+    --dark-slate-main: #0f172a;     
+    --body-text-color: #475569;     
+    --bg-gradient-start: #f8fafc;   
+    --bg-gradient-end: #eff6ff;     
+    
+    /* Typography Font Layouts */
+    --font-heading: 'Poppins', sans-serif;
+    --font-body: 'Inter', sans-serif;
+}
+
+/* Document Initialization layer */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    background: linear-gradient(135deg, var(--bg-gradient-start) 0%, var(--bg-gradient-end) 100%);
+    color: var(--body-text-color);
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+/* Glassmorphism Navigation Bar Effect */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 10%;
+    background-color: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--dark-slate-main);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo span {
+    background: linear-gradient(135deg, var(--brand-primary), var(--brand-gradient-end));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.brand-icon {
+    color: var(--brand-primary);
+    font-size: 1.6rem;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--body-text-color);
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: all 0.25s ease;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: var(--brand-primary);
+}
+
+.nav-cta {
+    background: var(--dark-slate-main);
+    color: white;
+    border: none;
+    padding: 0.6rem 1.4rem;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.nav-cta:hover {
+    opacity: 0.9;
+}
+
+/* Modern Multi-Column Responsive Hero Presentation Layer */
+.hero-section {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 10%;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.hero-container {
+    flex: 1.2;
+    min-width: 320px;
+}
+
+/* Micro pill design element */
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #e0e7ff;
+    color: var(--brand-primary);
+    padding: 0.4rem 1rem;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.hero-title {
+    font-family: var(--font-heading);
+    font-size: 3.5rem;
+    line-height: 1.2;
+    color: var(--dark-slate-main);
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.03em;
+}
+
+.hero-subtitle {
+    font-size: 1.15rem;
+    color: var(--body-text-color);
+    margin-bottom: 2.5rem;
+    max-width: 600px;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+}
+
+/* Dynamic Gradient Primary CTA */
+.primary-cta-btn {
+    background: linear-gradient(135deg, var(--brand-primary) 0%, #3b82f6 100%);
+    color: #ffffff;
+    border: none;
+    padding: 0.95rem 2.25rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 10px 25px -5px rgba(79, 70, 229, 0.4);
+    transition: all 0.3s ease;
+}
+
+.primary-cta-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 30px -5px rgba(79, 70, 229, 0.5);
+}
+
+.button-icon-right {
+    margin-left: 0.6rem;
+    font-size: 0.9rem;
+}
+
+/* Styled Minimal Secondary CTA Button */
+.secondary-cta-btn {
+    background: #ffffff;
+    color: var(--dark-slate-main);
+    border: 1px solid #e2e8f0;
+    padding: 0.95rem 2.25rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: all 0.2s ease;
+}
+
+.secondary-cta-btn:hover {
+    background: #f8fafc;
+    border-color: #cbd5e1;
+}
+
+.button-icon-left {
+    margin-right: 0.6rem;
+}
+
+/* Neon Backed Graphic Element Wrapper */
+.hero-graphic-wrapper {
+    flex: 1;
+    min-width: 320px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.gradient-glow-backing {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    background: linear-gradient(135deg, var(--brand-primary), var(--brand-gradient-end));
+    filter: blur(60px);
+    opacity: 0.25;
+    z-index: 1;
+    top: 10%;
+}
+
+.hero-responsive-image {
+    width: 100%;
+    max-width: 520px;
+    height: auto;
+    border-radius: 20px;
+    z-index: 2;
+    box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.15);
+    border: 1px solid rgba(255,255,255,0.7);
+}
+
+/* Features Component Architecture Styles */
+.features-section {
+    padding: 7rem 10%;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.section-badge {
+    color: var(--brand-primary);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.section-heading {
+    font-family: var(--font-heading);
+    color: var(--dark-slate-main);
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 4rem;
+}
+
+.features-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+}
+
+/* High Fidelity Interactive Feature Cards */
+.feature-card {
+    background: #ffffff;
+    padding: 3rem 2.25rem;
+    border-radius: 16px;
+    border: 1px solid #f1f5f9;
+    text-align: left;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02), 0 2px 4px -1px rgba(0, 0, 0, 0.01);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.feature-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 25px -5px rgba(15, 23, 42, 0.08);
+    border-color: #e2e8f0;
+}
+
+/* Colorful Neon Icon Wrappers */
+.feature-icon-wrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 12px;
+    font-size: 1.4rem;
+    margin-bottom: 1.75rem;
+}
+
+.purple-glow { background-color: #e0e7ff; color: #4338ca; }
+.blue-glow { background-color: #e0f2fe; color: #0369a1; }
+.neon-glow { background-color: #ccfbf1; color: #0f766e; }
+
+.card-title {
+    font-family: var(--font-heading);
+    color: var(--dark-slate-main);
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+.card-description {
+    font-size: 0.98rem;
+    color: var(--body-text-color);
+}
+
+/* Ultra Clean Footer Layer */
+.app-footer {
+    background-color: var(--dark-slate-main);
+    color: #94a3b8;
+    text-align: center;
+    padding: 2.5rem;
+    font-size: 0.9rem;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Full-Stack UI | Task 1</title>
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Poppins:wght@600;700;800&display=swap">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo"><i class="fa-solid fa-cubes-gradient brand-icon"></i>Dev<span>Nexus</span></div>
+        <nav aria-label="Primary Navigation">
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="nav-cta">Launch Console</button>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="hero-container">
+                <span class="badge"><i class="fa-solid fa-bolt"></i> Full-Stack Internship v1.0</span>
+                <h1 class="hero-title">Crafting the Future of Web Technology</h1>
+                <p class="hero-subtitle">Building highly production-ready software solutions optimized for flawless user engagement and lightning fast loading times.</p>
+                <div class="hero-actions">
+                    <button class="primary-cta-btn" id="exploreBtn">
+                        Get Started Free <i class="fa-solid fa-arrow-right button-icon-right"></i>
+                    </button>
+                    <button class="secondary-cta-btn">
+                        <i class="fa-solid fa-play button-icon-left"></i> Watch Tutorial
+                    </button>
+                </div>
+            </div>
+            
+            <div class="hero-graphic-wrapper">
+                <div class="gradient-glow-backing"></div>
+                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80" alt="Full Stack Workspace" class="hero-responsive-image">
+            </div>
+        </section>
+
+        <section id="features" class="features-section">
+            <span class="section-badge">Core Features</span>
+            <h2 class="section-heading">Engineered for Performance</h2>
+            
+            <div class="features-grid-container">
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper purple-glow">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h3 class="card-title">Clean Architecture</h3>
+                    <p class="card-description">Strict adherence to modern web standards, semantic structural definitions, and optimized asset indexing logic.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper blue-glow">
+                        <i class="fa-solid fa-layer-group"></i>
+                    </div>
+                    <h3 class="card-title">Design Tokens</h3>
+                    <p class="card-description">Engineered structural layout systems using premium design parameters, keeping typography crisp and readable.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper neon-glow">
+                        <i class="fa-solid fa-gauge-high"></i>
+                    </div>
+                    <h3 class="card-title">Optimization Peak</h3>
+                    <p class="card-description">Asynchronous controller routines mapped with strict performance guidelines for sub-millisecond interactivity.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="app-footer">
+        <p>&copy; 2026 DevNexus Engineering Workspace. Handcrafted with Precision.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
